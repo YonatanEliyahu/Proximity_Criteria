@@ -5,8 +5,11 @@ This repository contains the final project for Course 10324, Parallel and Distri
 ## Problem Definition
 
 The task involves analyzing a set of N points in a two-dimensional plane. The coordinates of each point are defined by the equations:
+
 x = ((x2 - x1) / 2) * sin(t * π / 2) + ((x2 + x1) / 2)
+
 y = a * x + b
+
 where (x1, x2, a, b) are predefined constant parameters for each point.
 
 ## Requirements
@@ -21,21 +24,30 @@ Projects with missing files, build/run errors, or improper creation will not be 
 ## Input and Output
 ### Input
 The input.txt file contains the following data:
+
 N K D TCount
+
 id x1 x2 a b
+
 id x1 x2 a b
-id x1 x2 a b
+
 ...
+
 id x1 x2 a b
 
 where N is the number of points, K is the minimal number of points to satisfy the Proximity Criteria, D is the distance threshold, and TCount is the value used to calculate t. Each point has an ID (id), constants x1, x2, a, and b.
 
 ### Output
 The output.txt file contains information about points that satisfy the Proximity Criteria for specific values of t:
+
 Points pointID1, pointID2, pointID3 satisfy Proximity Criteria at t = t1
+
 Points pointID4, pointID5, pointID6 satisfy Proximity Criteria at t = t2
+
 Points pointID7, pointID8, pointID9 satisfy Proximity Criteria at t = t3
+
 If no points are found for any t, the output will be:
+
 There were no 3 points found for any t.
 
 ## Implementation Overview
